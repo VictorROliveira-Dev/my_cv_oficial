@@ -1,0 +1,138 @@
+body {
+    background-color: #3d3d3d;
+    font-family: 'system-ui', sans-serif;
+    color: #ffffff;
+    box-sizing: border-box;
+} 
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: orange;
+}
+
+.icon_footer {
+    width: 24px;
+    height: 24px;
+}
+
+.icon_class {
+    width: 32px;
+    height: 32px;
+}
+
+img {
+    height: 400px;
+    width: 500px;
+    border-radius: 15px;
+}
+
+.header {
+    padding: 2% 0% 0% 8%;
+}
+
+.header_nav {
+    display: flex;
+    gap: 80px;
+}
+
+.header_link {
+    font-size: 24px;
+    font-weight: bold;
+    color: orange;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+header:hover nav a{
+    color: white;
+}
+
+header:hover nav a:not(:hover) {
+    color: orange;
+    opacity: 0.3;
+    filter: blur(0.1px);
+}
+
+.titulo_principal {
+    font-weight: bold;
+    font-size: 34px;
+}
+
+.titulo_destaque {
+    color: #ff9f1a;
+}
+
+.titulo_descricao {
+    font-weight: lighter;
+    font-size: 24px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.apresentacao {
+    padding: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao_conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px
+}
+
+.div_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.titulo_secundario {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.button_links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    background-color: transparent;
+    border: 3px solid orange;
+    width: 380px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 24px;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.button_links:is(:hover, :focus) {
+    background-color: white;
+    color: black;
+    outline: 4px solid orange;
+    outline-offset: 5px;
+    transition: 0.2s;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: lighter;
+    color: white;
+    background-color: orange;
+}
