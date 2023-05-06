@@ -1,7 +1,14 @@
+:root {
+    --color-main: orange;
+    --background-main: #3d3d3d;
+    --font-text-main: #FFF;
+    --background-button-hover: #ecf0f1;
+}
+
 body {
-    background-color: #3d3d3d;
+    background-color: var(--background-main);
     font-family: 'system-ui', sans-serif;
-    color: #ffffff;
+    color: var(--font-text-main);
     box-sizing: border-box;
 } 
 
@@ -10,7 +17,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: orange;
+    background-color: var(--color-main);
 }
 
 .icon_footer {
@@ -41,17 +48,17 @@ img {
 .header_link {
     font-size: 24px;
     font-weight: bold;
-    color: orange;
+    color: var(--color-main);
     text-decoration: none;
     transition: 0.5s ease;
 }
 
 header:hover nav a{
-    color: white;
+    color: var(--font-text-main);
 }
 
 header:hover nav a:not(:hover) {
-    color: orange;
+    color: var(--color-main);
     opacity: 0.3;
     filter: blur(0.1px);
 }
@@ -62,7 +69,7 @@ header:hover nav a:not(:hover) {
 }
 
 .titulo_destaque {
-    color: #ff9f1a;
+    color: var(--color-main);
 }
 
 .titulo_descricao {
@@ -106,7 +113,7 @@ strong {
     justify-content: center;
     gap: 16px;
     background-color: transparent;
-    border: 3px solid orange;
+    border: 3px solid var(--color-main);
     width: 380px;
     text-align: center;
     border-radius: 10px;
@@ -118,9 +125,9 @@ strong {
 }
 
 .button_links:is(:hover, :focus) {
-    background-color: white;
+    background-color: var(--background-button-hover);
     color: black;
-    outline: 4px solid orange;
+    outline: 4px solid var(--color-main);
     outline-offset: 5px;
     transition: 0.2s;
 }
@@ -133,6 +140,6 @@ strong {
     text-align: center;
     font-size: 24px;
     font-weight: lighter;
-    color: white;
-    background-color: orange;
+    color: var(--font-text-main);
+    background-color: var(--color-main);
 }
