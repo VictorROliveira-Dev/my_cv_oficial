@@ -122,6 +122,7 @@ strong {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    transition: 0.3s ease-in-out;
 }
 
 .button_links:is(:hover, :focus) {
@@ -129,7 +130,6 @@ strong {
     color: black;
     outline: 4px solid var(--color-main);
     outline-offset: 5px;
-    transition: 0.2s;
 }
 
 .footer {
