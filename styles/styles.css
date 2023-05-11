@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 :root {
     --color-main: orange;
     --background-main: #3d3d3d;
@@ -64,6 +66,7 @@ header:hover nav a:not(:hover) {
 }
 
 .titulo_principal {
+    font-family: 'Righteous', cursive;
     font-weight: bold;
     font-size: 2.125rem;
 }
